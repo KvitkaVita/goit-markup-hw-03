@@ -20,6 +20,7 @@
 body {
   font-family: var(--main-font);
   background: var(--main-bgc);
+  margin: 0;
 }
 .container {
   width: 1200px;
@@ -27,8 +28,6 @@ body {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  
-  outline: 1px solid tomato;
 }
 
 /* Reset styles */
@@ -142,9 +141,19 @@ p {
   text-transform: uppercase;
   color: var(--white-txt-color);
   background: var(--additional-bgc);
+  width: 1700px;
+  padding-top: 100px;
+  
+}
+.heading-title {
+width: 696px;
+margin-left: auto;
+margin-right: auto;
+
+} 
 
   /* Кнопка Замовити послугу */
-}
+
 .button {
   color: var(--white-txt-color);
   background-color: var(--accent-color);
@@ -154,6 +163,10 @@ p {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   font-family: inherit;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  margin-top: 30px;
 }
 
 .button:hover,
