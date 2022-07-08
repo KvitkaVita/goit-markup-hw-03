@@ -28,6 +28,8 @@ body {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  outline: 1px solid tomato;
 }
 
 /* Reset styles */
@@ -220,6 +222,19 @@ margin-right: auto;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.features-container {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
+.features-items {
+width: 270px;
+height: 101px;
+gap: 30px;
+}
 
 .features-item {
   font-weight: 700;
@@ -236,19 +251,41 @@ margin-right: auto;
   color: var(--grey-txt-color);
 }
 
+/* Чим займаються */
+
+.list-container {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
 /* Наша команда */
 .heading-two {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
+
+.team-container {
+  display: flex;
+  gap: 30px;
+}
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
  .team-name {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-job {
   line-height: calc(19 / 16);
@@ -261,10 +298,13 @@ margin-right: auto;
 .contact-info {
   font-style: normal;
   font-size: 14px;
+  margin-top: 20px;
 }
 .bottom {
   background-color: var(--additional-bgc);
   color: var(--white-txt-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .bottom-logo {
   font-family: var(--additional-font);
@@ -274,6 +314,7 @@ margin-right: auto;
   letter-spacing: 0.03em;
   color: var(--accent-txt-color);
   text-decoration: none;
+  
 }
 .bottom-logo-accent {
   color: var(--white-txt-color);
