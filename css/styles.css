@@ -139,7 +139,11 @@ img {
   text-transform: uppercase;
   color: var(--white-txt-color);
   background: var(--additional-bgc);
-  padding-top: 100px;
+}
+
+.hero-heading {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .heading-title {
@@ -161,7 +165,6 @@ img {
   font-family: inherit;
   padding: 10px 32px;
   border-radius: 4px;
-  margin-bottom: 200px;
   margin-top: 30px;
 }
 
@@ -170,44 +173,7 @@ img {
   background-color: #188ce8;
 }
 
-/* Фільтри-кнопки на сторінці Портфоліо*/
-.filters-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-  gap: 8px;
-}
 
-.filters-button {
-  font-weight: 500;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  letter-spacing: 0.03em;
-  border: transparent;
-  cursor: pointer;
-  padding: 6px 22px;
-}
-
-.filters-button:hover,
-.filters-button:focus {
-  color: var(--white-txt-color);
-  background-color: var(--accent-color);
-}
-
-.header-pages {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--dark-txt-color);
-  text-decoration: none;
-}
-
-.header-pages:hover,
-.header-pages:focus {
-  color: var(--accent-txt-color);
-}
 
 /* Особливості компанії */
 .visually-hidden {
@@ -223,17 +189,21 @@ img {
   overflow: hidden;
 }
 
-.features-container {
+.features-list {
   display: flex;
+  gap: 30px;
+}
+
+.features-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .features-items {
   width: 270px;
-  height: 101px;
-  gap: 30px;
 }
 
 .features-item {
@@ -242,6 +212,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-item-descr {
@@ -252,12 +223,20 @@ img {
 }
 
 /* Чим займаються */
+.work-container {
+  padding-bottom: 90px;
+}
+
 .list-container {
   display: flex;
   gap: 30px;
 }
 
 /* Наша команда */
+.team-section {
+  background-color: #F5F4FA;
+}
+
 .heading-two {
   font-weight: 700;
   font-size: 36px;
@@ -299,51 +278,46 @@ img {
   color: var(--grey-txt-color);
 }
 
-/* Footer */
-.contact-info {
-  font-style: normal;
-  font-size: 14px;
-  margin-top: 20px;
+/* Фільтри-кнопки на сторінці Портфоліо*/
+.filters-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  gap: 8px;
 }
 
-.bottom {
-  background-color: var(--additional-bgc);
-  color: var(--white-txt-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.bottom-logo {
-  font-family: var(--additional-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+.filters-button {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
+  border: transparent;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--white-txt-color);
+  background-color: var(--accent-color);
+}
+
+.header-pages {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--dark-txt-color);
+  text-decoration: none;
+}
+
+.header-pages:hover,
+.header-pages:focus {
   color: var(--accent-txt-color);
-  text-decoration: none;
 }
 
-.bottom-logo-accent {
-  color: var(--white-txt-color);
-}
 
-.bottom-logo,
-.bottom-logo-accent {
-  padding-top: 60px;
-}
-
-.list-bottom-contacts {
-  margin-top: 9px;
-}
-
-.bottom-contacts {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  margin-top: 9px;
-}
 
 .bottom-contacts:hover,
 .bottom-contacts:focus {
@@ -381,4 +355,51 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* Footer */
+.contact-info {
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.bottom {
+  background-color: var(--additional-bgc);
+  color: var(--white-txt-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bottom-logo {
+  font-family: var(--additional-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-txt-color);
+  text-decoration: none;
+}
+
+.bottom-logo-accent {
+  color: var(--white-txt-color);
+}
+
+.place {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.list.list-bottom-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.bottom-contacts {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
