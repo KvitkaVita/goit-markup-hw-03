@@ -81,6 +81,7 @@ img {
 }
 .logo-accent {
   color: var(--dark-txt-color);
+  margin-right: 93px;
 }
 
 .site-nav {
@@ -89,14 +90,12 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--dark-txt-color);
-  display: flex;
-  margin-right: 50px;
-  margin-left: 93px;
+  color: var(--dark-txt-color); 
 }
 
-.site-nav:last-child {
-  margin-right: 0;
+.list.site-nav {
+  display: flex;
+  gap: 50px;
 }
 
 .site-nav:hover,
@@ -107,6 +106,12 @@ img {
 .list .site-nav.current {
   color: var(--accent-txt-color);
 }
+
+.list.header-container {
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .contacts {
   font-weight: 500;
   font-size: 14px;
@@ -114,6 +119,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--grey-txt-color);
   text-decoration: none;
+  
 }
 
 .contacts:hover,
@@ -121,9 +127,6 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-phone {
-  margin-right: 50px;
-}
 
 /* Ефективні рішення  */
 .heading {
